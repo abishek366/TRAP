@@ -1,0 +1,83 @@
+<html>
+    <head lang="en">
+        <title>Personal</title>
+        <link rel ="icon" href="personal.jpeg">
+    </head>
+
+    <body>
+        <center>
+        <h1> Welcome to my Page</h1>
+        <hr>
+        </center>
+
+        <h1>Personal detail</h1>
+        <center>
+            <img src="photo.jpeg" width="200px">
+        <h2>Name:Abisheka priyan T R</h2>
+        <h2>Mail Id: abisheh366@gmail.com</h2>
+        <h2>Linkedin : www.linkedin.com/in/abishek1202</h2>
+        <h2> Address:No.7 Azath street </h2>
+        <h2> senthaneerpuram </h2>
+        <h2>Trichy - 620004</h2>  
+        <h2>TamilNadu </h2>
+    </center>
+    <h1>Profile</h1>
+    <link rel="icon" href="profile.jpeg">
+    <center>
+        <h3>To work in a company where I can
+            servive and develop my knowledge
+            and skills to fill my ethics to the
+            company.
+            </h3>
+        </center>
+        <h1> Language</h1>
+        <center>
+            <h2>Tamil</h2>
+            <h2>English</h2>
+            </ol>
+       
+    </center>
+    <h1>Education</h1>
+    <center>
+        <h1>Secondary school</h1>
+        <h2>AKKV Arunadam Higher Secondary__"2019-2021"</h2>
+        <h2> Bachelor of Technology </h2>
+        <h2> K Ramakrishan College Of Technology__"2022 - 2025" </h2>
+    </center>
+    <h1></h1>
+    <h1> Skills
+    </h1>
+    <center>
+        <h2>3D Design</h2>
+        <h2>Design Thinking</h2>
+        <h2>Quick Decision maker</h2>
+        <h3>Problem-Solving</h3>
+        <h2>Computer literacy</h2>
+        <h2>Project managment tools</h2>
+        <h2>Strog communication</h2>
+    </center>
+    <h1>Computer Skills</h1>
+    <center>
+        <h2>C,C++ Intermeditate</h2>
+        <h2>HTML Intermediate</h2>
+        <h2>Python Intermediate</h2>
+        <h2>Canva tool</h2>
+        <h2>MS office</h2>
+        <h2>Tinker Cad 3D design</h2>
+        <h2>Fusion 360</h2>
+    </center>
+    <h1>Achivements</h1>
+    <center>
+        <h2>Completed a Google Colud lab</h2>
+        <h2>Completed C- programming course on Skill Rack</h2>
+        <h2>Completed Microsoft Power platform fundamentals</h2>
+        <h2>Won a Second price on Technical Quiz conducted by GCES</h2>
+        <h2>Completed a course in NPTL "Soft Skills" </h2>
+        <h2>Completed a course in NPTL "Worksing in Complementry teams"</h2>
+        <h2>Completed a course in NPTL "Digital Circuits"</h2>
+        <h2>Presented a paper entitled "Levels of Communication"</h2>
+        <h2>Completed 100 C programs in ICT Laboratory</h2>
+    </center>
+    <hr>
+    </body>
+</html>
