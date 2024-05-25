@@ -1,0 +1,63 @@
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <DHT.h>
+
+#define DHTPIN D4 // Pin connected to the DHT sensor
+#define DHTTYPE DHT11 // DHT 11
+DHT dht(DHTPIN, DHTTYPE);
+
+LiquidCrystal_I2C lcd(0x27, 16, 2); // Set the LCD I2C address
+
+#define MQPIN A0
+
+void setup() {
+  // Initialize the LCD and DHT sensor
+  lcd.init();
+  lcd.backlight();
+  dht.begin();
+
+  // Start the serial communication
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Read humidity and temperature from DHT
+  float humidity = dht.readHumidity();
+  float temperature = dht.readTemperature();
+
+  // Read the air quality value from MQ-135
+  int airQuality = analogRead(MQPIN);
+
+  // Check if any reads failed
+  if (isnan(humidity) || isnan(temperature)) {
+    Serial.println("Failed to read from DHT sensor!");
+    return;
+  }
+
+  // Print the values to the serial monitor
+  Serial.print("Humidity: ");
+  Serial.print(humidity);
+  Serial.print(" %\t");
+  Serial.print("Temperature: ");
+  Serial.print(temperature);
+  Serial.print(" *C ");
+  Serial.print("Air Quality: ");
+  Serial.println(airQuality);
+
+  // Display the values on the LCD
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Temp: ");
+  lcd.print(temperature);
+  lcd.print("C");
+  lcd.setCursor(0, 1);
+  lcd.print("Hum: ");
+  lcd.print(humidity);
+  lcd.print("%");
+  lcd.setCursor(8, 1);
+  lcd.print("AQ: ");
+  lcd.print(airQuality);
+
+  // Wait a few seconds before the next reading
+  delay(2000);
+}
